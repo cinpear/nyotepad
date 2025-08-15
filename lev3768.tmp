@@ -1,0 +1,322 @@
+[gd_scene load_steps=23 format=3 uid="uid://boqtdtfmnn2xr"]
+
+[ext_resource type="Script" path="res://level_1.gd" id="1_7nhdu"]
+[ext_resource type="AudioStream" uid="uid://bso3xiwxaa24e" path="res://_Rhythm Heaven Fever_ _ Tambourine _Perfect_ - Pablo Acevedo - SoundLoadMate.com.mp3" id="2_j18nh"]
+[ext_resource type="PackedScene" uid="uid://cojg2t01y82l8" path="res://spritemaps/a_spritemap.tscn" id="22_nggbu"]
+[ext_resource type="PackedScene" uid="uid://cnx47nl3x6w8d" path="res://spritemaps/c_spritemap.tscn" id="23_ll5oh"]
+[ext_resource type="PackedScene" uid="uid://cw2he7w1bv8w0" path="res://spritemaps/o_spritemap.tscn" id="24_5mgl7"]
+[ext_resource type="PackedScene" uid="uid://vntk35tx5jwo" path="res://spritemaps/r_spritemap.tscn" id="25_hko3e"]
+[ext_resource type="PackedScene" uid="uid://dtlxbnlf0jgue" path="res://spritemaps/d_spritemap.tscn" id="26_b3e1u"]
+[ext_resource type="PackedScene" uid="uid://vmhyhgixt57h" path="res://spritemaps/n_spritemap.tscn" id="26_u5xhw"]
+[ext_resource type="PackedScene" uid="uid://wqlu4doa4j01" path="res://spritemaps/i_spritemap.tscn" id="27_wlvry"]
+[ext_resource type="PackedScene" uid="uid://jvup1v8fytqt" path="res://spritemaps/g_spritemap.tscn" id="27_xlsgp"]
+[ext_resource type="PackedScene" uid="uid://cmmxyn4t2qmh1" path="res://spritemaps/t_spritemap.tscn" id="28_qvjfd"]
+[ext_resource type="PackedScene" uid="uid://cljwckiglgxl6" path="res://spritemaps/l_spritemap.tscn" id="29_3pcg7"]
+[ext_resource type="PackedScene" uid="uid://1qp8ox5njy1j" path="res://spritemaps/b_spritemap.tscn" id="29_4yppn"]
+[ext_resource type="PackedScene" uid="uid://drrlbqllnna6n" path="res://spritemaps/s_spritemap.tscn" id="29_xauu6"]
+[ext_resource type="PackedScene" uid="uid://c2mxgukx36qve" path="res://spritemaps/k_spritemap.tscn" id="30_6fjet"]
+[ext_resource type="PackedScene" uid="uid://cqqnxlsrdvl6o" path="res://spritemaps/u_spritemap.tscn" id="30_a5q7r"]
+[ext_resource type="PackedScene" uid="uid://d3tjj0m6niu7m" path="res://spritemaps/f_spritemap.tscn" id="30_f1dwv"]
+[ext_resource type="PackedScene" uid="uid://ccyyjjig4n0fv" path="res://spritemaps/w_spritemap.tscn" id="31_jw7w3"]
+[ext_resource type="PackedScene" uid="uid://dnwfkkq13t77c" path="res://spritemaps/v_spritemap.tscn" id="31_k2oxq"]
+[ext_resource type="PackedScene" uid="uid://b0xdwdb2isj3q" path="res://spritemaps/h_spritemap.tscn" id="32_vwli5"]
+[ext_resource type="PackedScene" uid="uid://86yxkb6iwnie" path="res://spritemaps/e_spritemap.tscn" id="33_1dsqe"]
+[ext_resource type="PackedScene" uid="uid://bsgfjaxuys8db" path="res://spritemaps/y_spritemap.tscn" id="34_ocdfu"]
+
+[node name="Level_1" type="Node2D"]
+script = ExtResource("1_7nhdu")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_j18nh")
+autoplay = true
+
+[node name="BeatTimer1" type="Timer" parent="."]
+wait_time = 16.4
+autostart = true
+
+[node name="KeyTimer1" type="Timer" parent="."]
+wait_time = 19.6
+autostart = true
+
+[node name="a_spritemap" parent="." instance=ExtResource("22_nggbu")]
+visible = false
+position = Vector2(347, 350)
+
+[node name="c_spritemap" parent="." instance=ExtResource("23_ll5oh")]
+visible = false
+position = Vector2(406, 350)
+
+[node name="c_spritemap2" parent="." instance=ExtResource("23_ll5oh")]
+visible = false
+position = Vector2(456, 350)
+
+[node name="o_spritemap" parent="." instance=ExtResource("24_5mgl7")]
+visible = false
+position = Vector2(509, 350)
+
+[node name="r_spritemap" parent="." instance=ExtResource("25_hko3e")]
+visible = false
+position = Vector2(561, 350)
+
+[node name="d_spritemap" parent="." instance=ExtResource("26_b3e1u")]
+visible = false
+position = Vector2(607, 350)
+
+[node name="i_spritemap" parent="." instance=ExtResource("27_wlvry")]
+visible = false
+position = Vector2(646, 350)
+
+[node name="n_spritemap" parent="." instance=ExtResource("26_u5xhw")]
+visible = false
+position = Vector2(687, 350)
+
+[node name="g_spritemap" parent="." instance=ExtResource("27_xlsgp")]
+visible = false
+position = Vector2(740, 350)
+
+[node name="t_spritemap" parent="." instance=ExtResource("28_qvjfd")]
+visible = false
+position = Vector2(849, 350)
+
+[node name="o_spritemap2" parent="." instance=ExtResource("24_5mgl7")]
+visible = false
+position = Vector2(897, 350)
+
+[node name="a_spritemap2" parent="." instance=ExtResource("22_nggbu")]
+visible = false
+position = Vector2(1000, 350)
+
+[node name="l_spritemap" parent="." instance=ExtResource("29_3pcg7")]
+visible = false
+position = Vector2(1040, 350)
+
+[node name="l_spritemap2" parent="." instance=ExtResource("29_3pcg7")]
+visible = false
+position = Vector2(1067, 350)
+
+[node name="k_spritemap" parent="." instance=ExtResource("30_6fjet")]
+visible = false
+position = Vector2(1158, 350)
+
+[node name="n_spritemap2" parent="." instance=ExtResource("26_u5xhw")]
+visible = false
+position = Vector2(1211, 350)
+
+[node name="o_spritemap3" parent="." instance=ExtResource("24_5mgl7")]
+visible = false
+position = Vector2(1267, 350)
+
+[node name="w_spritemap" parent="." instance=ExtResource("31_jw7w3")]
+visible = false
+position = Vector2(1321, 350)
+
+[node name="n_spritemap3" parent="." instance=ExtResource("26_u5xhw")]
+visible = false
+position = Vector2(1380, 350)
+
+[node name="l_spritemap3" parent="." instance=ExtResource("29_3pcg7")]
+visible = false
+position = Vector2(331, 465)
+
+[node name="a_spritemap3" parent="." instance=ExtResource("22_nggbu")]
+visible = false
+position = Vector2(377, 465)
+
+[node name="w_spritemap2" parent="." instance=ExtResource("31_jw7w3")]
+visible = false
+position = Vector2(443, 465)
+
+[node name="s_spritemap" parent="." instance=ExtResource("29_xauu6")]
+visible = false
+position = Vector2(500, 465)
+
+[node name="o_spritemap4" parent="." instance=ExtResource("24_5mgl7")]
+visible = false
+position = Vector2(573, 465)
+
+[node name="f_spritemap" parent="." instance=ExtResource("30_f1dwv")]
+visible = false
+position = Vector2(618, 465)
+
+[node name="a_spritemap4" parent="." instance=ExtResource("22_nggbu")]
+visible = false
+position = Vector2(718, 465)
+
+[node name="v_spritemap" parent="." instance=ExtResource("31_k2oxq")]
+visible = false
+position = Vector2(775, 465)
+
+[node name="i_spritemap2" parent="." instance=ExtResource("27_wlvry")]
+visible = false
+position = Vector2(811, 465)
+
+[node name="a_spritemap5" parent="." instance=ExtResource("22_nggbu")]
+visible = false
+position = Vector2(859, 465)
+
+[node name="t_spritemap2" parent="." instance=ExtResource("28_qvjfd")]
+visible = false
+position = Vector2(910, 465)
+
+[node name="i_spritemap3" parent="." instance=ExtResource("27_wlvry")]
+visible = false
+position = Vector2(953, 465)
+
+[node name="o_spritemap5" parent="." instance=ExtResource("24_5mgl7")]
+visible = false
+position = Vector2(999, 465)
+
+[node name="n_spritemap4" parent="." instance=ExtResource("26_u5xhw")]
+visible = false
+position = Vector2(1056, 465)
+
+[node name="t_spritemap3" parent="." instance=ExtResource("28_qvjfd")]
+visible = false
+position = Vector2(1154, 465)
+
+[node name="h_spritemap" parent="." instance=ExtResource("32_vwli5")]
+visible = false
+position = Vector2(1209, 465)
+
+[node name="e_spritemap" parent="." instance=ExtResource("33_1dsqe")]
+visible = false
+position = Vector2(1260, 465)
+
+[node name="r_spritemap2" parent="." instance=ExtResource("25_hko3e")]
+visible = false
+position = Vector2(1311, 465)
+
+[node name="e_spritemap2" parent="." instance=ExtResource("33_1dsqe")]
+visible = false
+position = Vector2(1362, 465)
+
+[node name="i_spritemap4" parent="." instance=ExtResource("27_wlvry")]
+visible = false
+position = Vector2(1466, 465)
+
+[node name="s_spritemap2" parent="." instance=ExtResource("29_xauu6")]
+visible = false
+position = Vector2(1502, 465)
+
+[node name="n_spritemap5" parent="." instance=ExtResource("26_u5xhw")]
+visible = false
+position = Vector2(337, 580)
+
+[node name="o_spritemap6" parent="." instance=ExtResource("24_5mgl7")]
+visible = false
+position = Vector2(387, 580)
+
+[node name="w_spritemap3" parent="." instance=ExtResource("31_jw7w3")]
+visible = false
+position = Vector2(491, 580)
+
+[node name="a_spritemap6" parent="." instance=ExtResource("22_nggbu")]
+visible = false
+position = Vector2(559, 580)
+
+[node name="y_spritemap" parent="." instance=ExtResource("34_ocdfu")]
+visible = false
+position = Vector2(617, 580)
+
+[node name="t_spritemap4" parent="." instance=ExtResource("28_qvjfd")]
+visible = false
+position = Vector2(717, 580)
+
+[node name="h_spritemap2" parent="." instance=ExtResource("32_vwli5")]
+visible = false
+position = Vector2(766, 580)
+
+[node name="a_spritemap7" parent="." instance=ExtResource("22_nggbu")]
+visible = false
+position = Vector2(834, 580)
+
+[node name="t_spritemap5" parent="." instance=ExtResource("28_qvjfd")]
+visible = false
+position = Vector2(888, 580)
+
+[node name="a_spritemap8" parent="." instance=ExtResource("22_nggbu")]
+visible = false
+position = Vector2(990, 580)
+
+[node name="b_spritemap" parent="." instance=ExtResource("29_4yppn")]
+visible = false
+position = Vector2(1095, 580)
+
+[node name="e_spritemap3" parent="." instance=ExtResource("33_1dsqe")]
+visible = false
+position = Vector2(1152, 580)
+
+[node name="e_spritemap4" parent="." instance=ExtResource("33_1dsqe")]
+visible = false
+position = Vector2(1206, 580)
+
+[node name="s_spritemap3" parent="." instance=ExtResource("29_xauu6")]
+visible = false
+position = Vector2(1299, 580)
+
+[node name="h_spritemap3" parent="." instance=ExtResource("32_vwli5")]
+visible = false
+position = Vector2(1354, 580)
+
+[node name="o_spritemap7" parent="." instance=ExtResource("24_5mgl7")]
+visible = false
+position = Vector2(1412, 580)
+
+[node name="u_spritemap" parent="." instance=ExtResource("30_a5q7r")]
+visible = false
+position = Vector2(1470, 580)
+
+[node name="l_spritemap4" parent="." instance=ExtResource("29_3pcg7")]
+visible = false
+position = Vector2(1509, 580)
+
+[node name="d_spritemap2" parent="." instance=ExtResource("26_b3e1u")]
+visible = false
+position = Vector2(1548, 580)
+
+[node name="b_spritemap2" parent="." instance=ExtResource("29_4yppn")]
+visible = false
+position = Vector2(340, 695)
+
+[node name="e_spritemap5" parent="." instance=ExtResource("33_1dsqe")]
+visible = false
+position = Vector2(394, 695)
+
+[node name="a_spritemap9" parent="." instance=ExtResource("22_nggbu")]
+visible = false
+position = Vector2(520, 695)
+
+[node name="b_spritemap3" parent="." instance=ExtResource("29_4yppn")]
+visible = false
+position = Vector2(577, 695)
+
+[node name="l_spritemap5" parent="." instance=ExtResource("29_3pcg7")]
+visible = false
+position = Vector2(618, 695)
+
+[node name="e_spritemap6" parent="." instance=ExtResource("33_1dsqe")]
+visible = false
+position = Vector2(661, 695)
+
+[node name="t_spritemap6" parent="." instance=ExtResource("28_qvjfd")]
+visible = false
+position = Vector2(765, 695)
+
+[node name="o_spritemap8" parent="." instance=ExtResource("24_5mgl7")]
+visible = false
+position = Vector2(809, 695)
+
+[node name="f_spritemap2" parent="." instance=ExtResource("30_f1dwv")]
+visible = false
+position = Vector2(918, 695)
+
+[node name="l_spritemap6" parent="." instance=ExtResource("29_3pcg7")]
+visible = false
+position = Vector2(954, 695)
+
+[node name="y_spritemap2" parent="." instance=ExtResource("34_ocdfu")]
+visible = false
+position = Vector2(992, 695)
+
+[connection signal="timeout" from="BeatTimer1" to="." method="_on_beat_timer_1_timeout"]
+[connection signal="timeout" from="KeyTimer1" to="." method="_on_key_timer_1_timeout"]

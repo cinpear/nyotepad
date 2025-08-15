@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://qordpb4sovnd"]
+
+[ext_resource type="Texture2D" uid="uid://nusx30n44oim" path="res://images/hit_spritemap.png" id="1_wdx5d"]
+
+[node name="hit_spritemap" type="Sprite2D"]
+texture_filter = 1
+texture = ExtResource("1_wdx5d")
+vframes = 6
+frame = 5

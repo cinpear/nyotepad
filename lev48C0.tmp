@@ -1,0 +1,319 @@
+[gd_scene load_steps=32 format=3 uid="uid://boqtdtfmnn2xr"]
+
+[ext_resource type="Script" path="res://level_1.gd" id="1_7nhdu"]
+[ext_resource type="Texture2D" uid="uid://fadpa8fdppty" path="res://images/nyotepad_letters/blue_a.png" id="2_d4fea"]
+[ext_resource type="AudioStream" uid="uid://bso3xiwxaa24e" path="res://_Rhythm Heaven Fever_ _ Tambourine _Perfect_ - Pablo Acevedo - SoundLoadMate.com.mp3" id="2_j18nh"]
+[ext_resource type="Texture2D" uid="uid://l0cube3r7slc" path="res://images/nyotepad_letters/blue_h.png" id="2_yncer"]
+[ext_resource type="Texture2D" uid="uid://cymxdq1jn382d" path="res://images/nyotepad_letters/blue_i.png" id="3_18llc"]
+[ext_resource type="Texture2D" uid="uid://bdwvioydfilvt" path="res://images/nyotepad_letters/blue_o.png" id="4_c26f8"]
+[ext_resource type="Texture2D" uid="uid://cj3ritruxxrw" path="res://images/nyotepad_letters/blue_r.png" id="5_hwkn2"]
+[ext_resource type="Texture2D" uid="uid://c8mxlgbwgxc2h" path="res://images/nyotepad_letters/blue_d.png" id="6_h2a8r"]
+[ext_resource type="Texture2D" uid="uid://bpnh1vf3dcdu4" path="res://images/nyotepad_letters/blue_n.png" id="8_mnotk"]
+[ext_resource type="Texture2D" uid="uid://be0y3i8tdot1o" path="res://images/nyotepad_letters/blue_t.png" id="10_eh4v8"]
+[ext_resource type="Texture2D" uid="uid://yenjt3s3adb0" path="res://images/nyotepad_letters/blue_l.png" id="11_k0ocs"]
+[ext_resource type="Texture2D" uid="uid://ej1b8apmqpdx" path="res://images/nyotepad_letters/blue_w.png" id="13_6ofw4"]
+[ext_resource type="Texture2D" uid="uid://bury6ueyphnom" path="res://images/nyotepad_letters/blue_s.png" id="14_3h3b0"]
+[ext_resource type="Texture2D" uid="uid://k44uq0uygbe4" path="res://images/nyotepad_letters/blue_f.png" id="15_808i5"]
+[ext_resource type="Texture2D" uid="uid://du6pr0pxye3b5" path="res://images/nyotepad_letters/blue_v.png" id="16_tsbci"]
+[ext_resource type="Texture2D" uid="uid://dfn6mqpadk66l" path="res://images/nyotepad_letters/blue_e.png" id="18_hdqpx"]
+[ext_resource type="Texture2D" uid="uid://du8hdgnb0g8ww" path="res://images/nyotepad_letters/blue_y.png" id="19_m3p5u"]
+[ext_resource type="Texture2D" uid="uid://jtn4h3l36au2" path="res://images/nyotepad_letters/blue_b.png" id="20_xjsaj"]
+[ext_resource type="Texture2D" uid="uid://bi2cmi1ksu7m6" path="res://images/nyotepad_letters/blue_u.png" id="21_ujhji"]
+[ext_resource type="PackedScene" uid="uid://cojg2t01y82l8" path="res://spritemaps/a_spritemap.tscn" id="22_nggbu"]
+[ext_resource type="PackedScene" uid="uid://cnx47nl3x6w8d" path="res://spritemaps/c_spritemap.tscn" id="23_ll5oh"]
+[ext_resource type="PackedScene" uid="uid://cw2he7w1bv8w0" path="res://spritemaps/o_spritemap.tscn" id="24_5mgl7"]
+[ext_resource type="PackedScene" uid="uid://vntk35tx5jwo" path="res://spritemaps/r_spritemap.tscn" id="25_hko3e"]
+[ext_resource type="PackedScene" uid="uid://dtlxbnlf0jgue" path="res://spritemaps/d_spritemap.tscn" id="26_b3e1u"]
+[ext_resource type="PackedScene" uid="uid://vmhyhgixt57h" path="res://spritemaps/n_spritemap.tscn" id="26_u5xhw"]
+[ext_resource type="PackedScene" uid="uid://wqlu4doa4j01" path="res://spritemaps/i_spritemap.tscn" id="27_wlvry"]
+[ext_resource type="PackedScene" uid="uid://jvup1v8fytqt" path="res://spritemaps/g_spritemap.tscn" id="27_xlsgp"]
+[ext_resource type="PackedScene" uid="uid://cmmxyn4t2qmh1" path="res://spritemaps/t_spritemap.tscn" id="28_qvjfd"]
+[ext_resource type="PackedScene" uid="uid://cljwckiglgxl6" path="res://spritemaps/l_spritemap.tscn" id="29_3pcg7"]
+[ext_resource type="PackedScene" uid="uid://c2mxgukx36qve" path="res://spritemaps/k_spritemap.tscn" id="30_6fjet"]
+[ext_resource type="PackedScene" uid="uid://ccyyjjig4n0fv" path="res://spritemaps/w_spritemap.tscn" id="31_jw7w3"]
+
+[node name="Level_1" type="Node2D"]
+script = ExtResource("1_7nhdu")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_j18nh")
+autoplay = true
+
+[node name="BeatTimer1" type="Timer" parent="."]
+wait_time = 16.4
+autostart = true
+
+[node name="KeyTimer1" type="Timer" parent="."]
+wait_time = 19.6
+autostart = true
+
+[node name="BlueL3" type="Sprite2D" parent="."]
+position = Vector2(331, 465)
+texture = ExtResource("11_k0ocs")
+
+[node name="BlueA3" type="Sprite2D" parent="."]
+position = Vector2(377, 465)
+texture = ExtResource("2_d4fea")
+
+[node name="BlueW2" type="Sprite2D" parent="."]
+position = Vector2(443, 465)
+texture = ExtResource("13_6ofw4")
+
+[node name="BlueS" type="Sprite2D" parent="."]
+position = Vector2(500, 465)
+texture = ExtResource("14_3h3b0")
+
+[node name="BlueO4" type="Sprite2D" parent="."]
+position = Vector2(573, 465)
+texture = ExtResource("4_c26f8")
+
+[node name="BlueF" type="Sprite2D" parent="."]
+position = Vector2(618, 465)
+texture = ExtResource("15_808i5")
+
+[node name="BlueA4" type="Sprite2D" parent="."]
+position = Vector2(718, 465)
+texture = ExtResource("2_d4fea")
+
+[node name="BlueV" type="Sprite2D" parent="."]
+position = Vector2(775, 465)
+texture = ExtResource("16_tsbci")
+
+[node name="BlueI2" type="Sprite2D" parent="."]
+position = Vector2(811, 465)
+texture = ExtResource("3_18llc")
+
+[node name="BlueA5" type="Sprite2D" parent="."]
+position = Vector2(859, 465)
+texture = ExtResource("2_d4fea")
+
+[node name="BlueT2" type="Sprite2D" parent="."]
+position = Vector2(910, 465)
+texture = ExtResource("10_eh4v8")
+
+[node name="BlueI3" type="Sprite2D" parent="."]
+position = Vector2(953, 465)
+texture = ExtResource("3_18llc")
+
+[node name="BlueO5" type="Sprite2D" parent="."]
+position = Vector2(999, 465)
+texture = ExtResource("4_c26f8")
+
+[node name="BlueN4" type="Sprite2D" parent="."]
+position = Vector2(1056, 465)
+texture = ExtResource("8_mnotk")
+
+[node name="BlueT3" type="Sprite2D" parent="."]
+position = Vector2(1154, 465)
+texture = ExtResource("10_eh4v8")
+
+[node name="BlueH" type="Sprite2D" parent="."]
+position = Vector2(1209, 465)
+texture = ExtResource("2_yncer")
+
+[node name="BlueE" type="Sprite2D" parent="."]
+position = Vector2(1260, 465)
+texture = ExtResource("18_hdqpx")
+
+[node name="BlueR2" type="Sprite2D" parent="."]
+position = Vector2(1311, 465)
+texture = ExtResource("5_hwkn2")
+
+[node name="BlueE2" type="Sprite2D" parent="."]
+position = Vector2(1362, 465)
+texture = ExtResource("18_hdqpx")
+
+[node name="BlueI4" type="Sprite2D" parent="."]
+position = Vector2(1466.5, 465)
+texture = ExtResource("3_18llc")
+
+[node name="BlueS2" type="Sprite2D" parent="."]
+position = Vector2(1502.5, 465)
+texture = ExtResource("14_3h3b0")
+
+[node name="BlueN5" type="Sprite2D" parent="."]
+position = Vector2(337, 580)
+texture = ExtResource("8_mnotk")
+
+[node name="BlueO6" type="Sprite2D" parent="."]
+position = Vector2(387, 580)
+texture = ExtResource("4_c26f8")
+
+[node name="BlueW3" type="Sprite2D" parent="."]
+position = Vector2(491.5, 580)
+texture = ExtResource("13_6ofw4")
+
+[node name="BlueA6" type="Sprite2D" parent="."]
+position = Vector2(559.5, 580)
+texture = ExtResource("2_d4fea")
+
+[node name="BlueY" type="Sprite2D" parent="."]
+position = Vector2(617.5, 580)
+texture = ExtResource("19_m3p5u")
+
+[node name="BlueT4" type="Sprite2D" parent="."]
+position = Vector2(717, 580)
+texture = ExtResource("10_eh4v8")
+
+[node name="BlueH2" type="Sprite2D" parent="."]
+position = Vector2(766, 580)
+texture = ExtResource("2_yncer")
+
+[node name="BlueA7" type="Sprite2D" parent="."]
+position = Vector2(834, 580)
+texture = ExtResource("2_d4fea")
+
+[node name="BlueT5" type="Sprite2D" parent="."]
+position = Vector2(888, 580)
+texture = ExtResource("10_eh4v8")
+
+[node name="BlueA8" type="Sprite2D" parent="."]
+position = Vector2(990, 580)
+texture = ExtResource("2_d4fea")
+
+[node name="BlueB" type="Sprite2D" parent="."]
+position = Vector2(1095, 580)
+texture = ExtResource("20_xjsaj")
+
+[node name="BlueE3" type="Sprite2D" parent="."]
+position = Vector2(1152, 580)
+texture = ExtResource("18_hdqpx")
+
+[node name="BlueE4" type="Sprite2D" parent="."]
+position = Vector2(1206, 580)
+texture = ExtResource("18_hdqpx")
+
+[node name="BlueS3" type="Sprite2D" parent="."]
+position = Vector2(1299.5, 580)
+texture = ExtResource("14_3h3b0")
+
+[node name="BlueH3" type="Sprite2D" parent="."]
+position = Vector2(1354.5, 580)
+texture = ExtResource("2_yncer")
+
+[node name="BlueO7" type="Sprite2D" parent="."]
+position = Vector2(1412.5, 580)
+texture = ExtResource("4_c26f8")
+
+[node name="BlueU" type="Sprite2D" parent="."]
+position = Vector2(1472.5, 580)
+texture = ExtResource("21_ujhji")
+
+[node name="BlueL4" type="Sprite2D" parent="."]
+position = Vector2(1511.5, 580)
+texture = ExtResource("11_k0ocs")
+
+[node name="BlueD2" type="Sprite2D" parent="."]
+position = Vector2(1550.5, 580)
+texture = ExtResource("6_h2a8r")
+
+[node name="BlueB2" type="Sprite2D" parent="."]
+position = Vector2(340, 695)
+texture = ExtResource("20_xjsaj")
+
+[node name="BlueE5" type="Sprite2D" parent="."]
+position = Vector2(394, 695)
+texture = ExtResource("18_hdqpx")
+
+[node name="BlueA9" type="Sprite2D" parent="."]
+position = Vector2(520, 695)
+texture = ExtResource("2_d4fea")
+
+[node name="BlueB3" type="Sprite2D" parent="."]
+position = Vector2(577, 695)
+texture = ExtResource("20_xjsaj")
+
+[node name="BlueL5" type="Sprite2D" parent="."]
+position = Vector2(618, 695)
+texture = ExtResource("11_k0ocs")
+
+[node name="BlueE6" type="Sprite2D" parent="."]
+position = Vector2(661, 695)
+texture = ExtResource("18_hdqpx")
+
+[node name="BlueT6" type="Sprite2D" parent="."]
+position = Vector2(765, 695)
+texture = ExtResource("10_eh4v8")
+
+[node name="BlueO8" type="Sprite2D" parent="."]
+position = Vector2(809, 695)
+texture = ExtResource("4_c26f8")
+
+[node name="BlueF2" type="Sprite2D" parent="."]
+position = Vector2(918, 695)
+texture = ExtResource("15_808i5")
+
+[node name="BlueL6" type="Sprite2D" parent="."]
+position = Vector2(954, 695)
+texture = ExtResource("11_k0ocs")
+
+[node name="BlueY2" type="Sprite2D" parent="."]
+position = Vector2(992, 695)
+texture = ExtResource("19_m3p5u")
+
+[node name="a_spritemap" parent="." instance=ExtResource("22_nggbu")]
+visible = false
+position = Vector2(347, 350)
+
+[node name="c_spritemap" parent="." instance=ExtResource("23_ll5oh")]
+visible = false
+position = Vector2(406, 350)
+
+[node name="c_spritemap2" parent="." instance=ExtResource("23_ll5oh")]
+visible = false
+position = Vector2(456, 350)
+
+[node name="o_spritemap" parent="." instance=ExtResource("24_5mgl7")]
+visible = false
+position = Vector2(509, 350)
+
+[node name="r_spritemap" parent="." instance=ExtResource("25_hko3e")]
+visible = false
+position = Vector2(561, 350)
+
+[node name="d_spritemap" parent="." instance=ExtResource("26_b3e1u")]
+visible = false
+position = Vector2(607, 350)
+
+[node name="i_spritemap" parent="." instance=ExtResource("27_wlvry")]
+visible = false
+position = Vector2(646, 350)
+
+[node name="n_spritemap" parent="." instance=ExtResource("26_u5xhw")]
+position = Vector2(687, 350)
+
+[node name="g_spritemap" parent="." instance=ExtResource("27_xlsgp")]
+position = Vector2(740, 350)
+
+[node name="t_spritemap" parent="." instance=ExtResource("28_qvjfd")]
+position = Vector2(849, 350)
+
+[node name="o_spritemap2" parent="." instance=ExtResource("24_5mgl7")]
+position = Vector2(897, 350)
+
+[node name="a_spritemap2" parent="." instance=ExtResource("22_nggbu")]
+position = Vector2(1000, 350)
+
+[node name="l_spritemap" parent="." instance=ExtResource("29_3pcg7")]
+position = Vector2(1040, 350)
+
+[node name="l_spritemap2" parent="." instance=ExtResource("29_3pcg7")]
+position = Vector2(1067, 350)
+
+[node name="k_spritemap" parent="." instance=ExtResource("30_6fjet")]
+position = Vector2(1158, 350)
+
+[node name="n_spritemap2" parent="." instance=ExtResource("26_u5xhw")]
+position = Vector2(1211, 350)
+
+[node name="o_spritemap3" parent="." instance=ExtResource("24_5mgl7")]
+position = Vector2(1267, 350)
+
+[node name="w_spritemap" parent="." instance=ExtResource("31_jw7w3")]
+position = Vector2(1321, 350)
+
+[node name="n_spritemap3" parent="." instance=ExtResource("26_u5xhw")]
+position = Vector2(1380, 350)
+
+[connection signal="timeout" from="BeatTimer1" to="." method="_on_beat_timer_1_timeout"]
+[connection signal="timeout" from="KeyTimer1" to="." method="_on_key_timer_1_timeout"]

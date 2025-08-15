@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dg6irbnfjy7vl"]
+
+[ext_resource type="Texture2D" uid="uid://cmwjnw4rleknf" path="res://images/gangganggang.png" id="1_ae0p3"]
+
+[node name="gangganggang" type="Sprite2D"]
+texture_filter = 1
+texture = ExtResource("1_ae0p3")
+centered = false

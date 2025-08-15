@@ -1,0 +1,66 @@
+[gd_scene load_steps=5 format=3 uid="uid://dt6s7mme7vgfw"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_1ec3k"]
+[ext_resource type="Texture2D" uid="uid://bee7oepfuymrs" path="res://images/cursor.png" id="1_eyca1"]
+[ext_resource type="Script" path="res://cursor.gd" id="2_52b3s"]
+[ext_resource type="Texture2D" uid="uid://2hrrl6w5kglh" path="res://images/nyotepad-background.png" id="5_ixrfs"]
+
+[node name="GameLevel" type="Node2D"]
+script = ExtResource("1_1ec3k")
+
+[node name="Cursor" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(362, 305)
+scale = Vector2(0.666667, 0.666667)
+texture = ExtResource("1_eyca1")
+script = ExtResource("2_52b3s")
+
+[node name="moveTimer" type="Timer" parent="Cursor"]
+wait_time = 1.5
+autostart = true
+
+[node name="Nyotepad-background" type="Sprite2D" parent="."]
+z_index = -1000
+position = Vector2(960, 540)
+texture = ExtResource("5_ixrfs")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+
+[node name="feedbackLabel" type="Label" parent="."]
+offset_left = 938.0
+offset_top = 618.0
+offset_right = 978.0
+offset_bottom = 641.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="wordDisplay" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 839.0
+offset_top = 362.0
+offset_right = 1098.0
+offset_bottom = 450.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "Ready... "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="beatTimer" type="Timer" parent="."]
+process_callback = 0
+
+[node name="wordTimer" type="Timer" parent="."]
+process_callback = 0
+
+[connection signal="timeout" from="Cursor/moveTimer" to="Cursor" method="_on_move_timer_timeout"]
+[connection signal="timeout" from="beatTimer" to="." method="_on_beat_timer_timeout"]
+[connection signal="timeout" from="wordTimer" to="." method="_on_word_timer_timeout"]

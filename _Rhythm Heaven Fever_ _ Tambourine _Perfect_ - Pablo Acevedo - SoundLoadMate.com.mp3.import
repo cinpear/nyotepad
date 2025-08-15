@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bso3xiwxaa24e"
+path="res://.godot/imported/_Rhythm Heaven Fever_ _ Tambourine _Perfect_ - Pablo Acevedo - SoundLoadMate.com.mp3-7283508ccdbccc13938b0c31a8e0b46a.mp3str"
+
+[deps]
+
+source_file="res://_Rhythm Heaven Fever_ _ Tambourine _Perfect_ - Pablo Acevedo - SoundLoadMate.com.mp3"
+dest_files=["res://.godot/imported/_Rhythm Heaven Fever_ _ Tambourine _Perfect_ - Pablo Acevedo - SoundLoadMate.com.mp3-7283508ccdbccc13938b0c31a8e0b46a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

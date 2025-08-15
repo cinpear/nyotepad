@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://dt6s7mme7vgfw"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_1ec3k"]
+[ext_resource type="Texture2D" uid="uid://788lecg5ac2l" path="res://images/nyotepad-background.png" id="5_ixrfs"]
+[ext_resource type="PackedScene" uid="uid://boqtdtfmnn2xr" path="res://level_1.tscn" id="6_ux0fh"]
+[ext_resource type="Texture2D" uid="uid://d0flnfahssa51" path="res://images/fakescore.png" id="7_45rog"]
+[ext_resource type="Texture2D" uid="uid://cmwjnw4rleknf" path="res://images/gangganggang.png" id="8_cen8f"]
+
+[node name="GameLevel" type="Node2D"]
+script = ExtResource("1_1ec3k")
+
+[node name="Nyotepad-background" type="Sprite2D" parent="."]
+z_index = -1000
+texture_filter = 1
+position = Vector2(960, 540)
+texture = ExtResource("5_ixrfs")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+
+[node name="Level_1" parent="." instance=ExtResource("6_ux0fh")]
+
+[node name="score" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("7_45rog")
+centered = false
+
+[node name="gangganggang" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+texture = ExtResource("8_cen8f")
+centered = false
